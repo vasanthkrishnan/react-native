@@ -13,6 +13,8 @@ const styles = StyleSheet.create({
         borderColor : "#fff",
         padding : 20,
         margin : 10,
+        width : 100,
+        height : 100,
     },
     text : {
         fontSize : 24,

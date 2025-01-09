@@ -1,8 +1,8 @@
 import { View, Text, Image, ImageBackground, Button, Modal, StatusBar, ActivityIndicator, Alert, StyleSheet } from "react-native";
 import { useState } from "react";
 // import Greet from "./component/Greet";
-import Box from "./component/Box";
-const logo = require('./assets/icon.png')
+// import Box from "./component/Box";
+// const logo = require('./assets/icon.png')
 
 export default function App() {
 
@@ -11,16 +11,19 @@ export default function App() {
   return (
     // <View style = {{ flex : 1, backgroundColor : "plum", padding : 60}}>
     <View style = {styles.container}>
+      <View style = {styles.box} >
+        <Text style = {styles.text}>Welcome !</Text>
+      </View>
 
-      <Box style={[{ backgroundColor: "black" }, { borderWidth: 2, borderColor: "black" }]}>Box 1</Box>
+      {/* <Box style={[{ backgroundColor: "black" }, { borderWidth: 2, borderColor: "black" }]}>Box 1</Box>
       <Box style={[{ backgroundColor : "blue"}, { borderWidth : 2, borderColor : "darkblue"}]}>Box 2</Box>
       <Box style={[{ backgroundColor : "green"}, { borderWidth : 2, borderColor : "darkgreen"}]}>Box 3</Box>
       <Box style={{ backgroundColor : "purple"}}>Box 4</Box>
       <Box style={{ backgroundColor : "orange"}}>Box 5</Box>
-      <Box style={{ backgroundColor : "violet"}}>Box 6</Box>
+      <Box style={{ backgroundColor : "violet"}}>Box 6</Box> */}
 
       {/* <StatusBar translucent = {true} /> */}
-      <Box />
+      {/* <Box /> */}
       {/* <ActivityIndicator color="black" size="large" animating = {true} /> */}
       {/* <Text>Hello World
         <Text style = {{ color : "red"}}> !</Text>
@@ -60,9 +63,34 @@ export default function App() {
 
 const styles = StyleSheet.create({
 
+
   container : {
-    marginTop : 64,
+    flex : 1,
+    backgroundColor : "plum",
+    alignItems : "center",
+    justifyContent : "center",
+  },
+  box : {
+    width : 300,
+    height : 300, 
+    backgroundColor : "lightblue",
+    alignItems : "center",
+    justifyContent : "center",
+  },
+  text : {
+    fontSize : 24,
   }
+
+  // container : {
+  //   height : 300,
+  //   marginTop : 64,
+  //   flex : 1,
+  //   alignItems : "stretch",
+  //   // flexWrap : "wrap",
+  //   justifyContent : "flex-start",
+  //   backgroundColor : "plum",
+  //   // flex : 1,
+  // }
 
   // container : {
   //   flex : 1,
